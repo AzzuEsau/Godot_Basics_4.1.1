@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmx71cukmfj0v"]
+
+[ext_resource type="Texture2D" uid="uid://c585ngmd43awg" path="res://media/images/icon.svg" id="1_safsg"]
+[ext_resource type="Script" path="res://scripts/test.cs" id="2_gp2e1"]
+[ext_resource type="Script" path="res://scripts/test_signal.cs" id="3_pc1uc"]
+
+[node name="main" type="Node"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(175, 113)
+texture = ExtResource("1_safsg")
+script = ExtResource("2_gp2e1")
+
+[node name="test_signal" type="Node2D" parent="Sprite2D"]
+script = ExtResource("3_pc1uc")
